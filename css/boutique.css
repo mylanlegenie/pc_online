@@ -1,9 +1,6 @@
 #div_boutique{
   min-height : 700px;
   text-align: center;
-
-
-
 }
 #div_boutique > h1 {
   font-size: 50px;
@@ -24,6 +21,7 @@
   justify-content: space-around;
   cursor: pointer;
   transition: 0.3s;
+  margin: auto;
 }
 
 .image_article{
