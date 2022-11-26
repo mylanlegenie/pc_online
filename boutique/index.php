@@ -1,3 +1,5 @@
+<?php include 'get_articles.php';?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,42 +13,25 @@
       <h1 id="nom_boutique">BOUTIQUE</h1>
       <div id="articles">
 
-        <div class="article" onclick= "window.location.href='#'">
-          <div class="image_article" style="background-image: url('/images/boutique/sourisg502.png');"></div>
-          <h2>Souris Logitech G502</h2>
-          <p>159.00€</p>
-        </div>
+      <?php
 
-        <div class="article" onclick= "window.location.href='#'">
-          <div class="image_article" style="background-image: url('/images/boutique/clavierg915tkl.png');"></div>
-          <h2>Clavier G915 TKL</h2>
-          <p>249.00€</p>
-        </div>
+      $articles = get_articles($db);
 
-        <div class="article" onclick= "window.location.href='#'">
-          <div class="image_article" style="background-image: url('/images/boutique/sourisg502.png');"></div>
-          <h2>Souris Logitech G502</h2>
-          <p>159.00€</p>
+      foreach ($articles as $ligne) {
+        
+        echo " <div class=\"article\" onclick= \"window.location.href='article.php?id=" . $ligne["id"] . "'\">
+        <div class=\"image_article\" style=\"background-image: url('/images/boutique/" . $ligne["nom_images"] . "');\"></div>
+        <div class=\"infos\">
+          <h2>" . $ligne["titre"] . "</h2>
+          <p>" . convert_prix($ligne["prix"]) . "€ </p>
         </div>
+      </div>
+";
 
-        <div class="article" onclick= "window.location.href='#'">
-          <div class="image_article" style="background-image: url('/images/boutique/clavierg915tkl.png');"></div>
-          <h2>Clavier G915 TKL</h2>
-          <p>249.00€</p>
-        </div>
+      }
 
-        <div class="article" onclick= "window.location.href='#'">
-          <div class="image_article" style="background-image: url('/images/boutique/sourisg502.png');"></div>
-          <h2>Souris Logitech G502</h2>
-          <p>159.00€</p>
-        </div>
-
-        <div class="article" onclick= "window.location.href='#'">
-          <div class="image_article" style="background-image: url('/images/boutique/clavierg915tkl.png');"></div>
-          <h2>Clavier G915 TKL</h2>
-          <p>249.00€</p>
-        </div>
-
+       
+      ?>
 
       </div>
     </div>
