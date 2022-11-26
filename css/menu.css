@@ -39,6 +39,11 @@ nav{
   align-items :center;
 
 }
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .navlink, .navlink-mobile{
   margin-left: 10px;
   color : var(--bleu3);
