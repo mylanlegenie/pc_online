@@ -51,6 +51,7 @@ $pourjs = $pourjs . ']';
 
 
     <?php include "footer.html"; // Ajouter le pied de page ?>
+    
 
 
   </body>
