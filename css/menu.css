@@ -193,3 +193,17 @@ transition: 1s;
        width: 70px;
      }
 }
+
+
+@media screen and (max-width : 280px){
+  #logo{
+    width: 100%;
+    height: auto;
+  }
+
+  #loupe, #burger{
+    width: 20px;
+    height: auto;
+  }
+
+}

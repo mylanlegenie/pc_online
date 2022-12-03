@@ -10,29 +10,33 @@
 <body>
     <?php include '../menu.php'; ?>
     <div id="article_box">
-        <div id="infos_produits_mobile">
-           <h2>SOURIS LOGITECH G502</h2> 
-        </div>
+      
         <div id="img_article" >
             <img src="/images/boutique/clavierg915tkl.png">
         </div>
-        <div id="prix_stock_mobile">
+
+        <div id="separateur">
+            
+        </div>
+
+        <div id="titre">
+            <h2>SOURIS LOGITECH G502</h2>
+        </div>
+
+        <div id="infos_produits">
             <p>149.00€</p>
             <p>Stock : 3</p>
         </div>
-        <div id="infos_article">
-            <div id="infos_produits">
-                <h2>SOURIS LOGITECH G502</h2><br>
-                <p>149.00€</p>
-                <p>Stock : 3</p>
-                <p>Conçue pour des performances de jeu avancées. La souris G502 HERO est dotée du capteur gaming HERO 25K avec un suivi de précision au sous-micron près, un éclairage LIGHTSYNC RVB personnalisable, des profils intégrés, des poids amovibles et bien plus encore.</p>
-            </div>
-            <div id="ajout_panier">
-                <button onclick="ajout_panier();">Ajouter au panier</button>
-                <p>Vendu par Mylan</p>
-            </div>
-            
+
+        <div id="description">
+            <p>Conçue pour des performances de jeu avancées. La souris G502 HERO est dotée du capteur gaming HERO 25K avec un suivi de précision au sous-micron près, un éclairage LIGHTSYNC RVB personnalisable, des profils intégrés, des poids amovibles et bien plus encore.</p>
         </div>
+
+        <div id="ajout_panier">
+            <button onclick="ajout_panier();">Ajouter au panier</button>
+            <p>Vendu par Mylan</p>
+        </div>
+        
 
 
 
