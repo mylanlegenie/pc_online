@@ -10,8 +10,15 @@
 <body>
     <?php include '../menu.php'; ?>
     <div id="article_box">
+        <div id="infos_produits_mobile">
+           <h2>SOURIS LOGITECH G502</h2> 
+        </div>
         <div id="img_article" >
             <img src="/images/boutique/clavierg915tkl.png">
+        </div>
+        <div id="prix_stock_mobile">
+            <p>149.00€</p>
+            <p>Stock : 3</p>
         </div>
         <div id="infos_article">
             <div id="infos_produits">

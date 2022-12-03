@@ -6,7 +6,7 @@
 }
 #img_article > img{
     width:100%; height:100%;
-   object-fit: contain;
+    object-fit: contain;
    
 }
 #article_box{
@@ -15,6 +15,11 @@
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+
+}
+
+#infos_produits_mobile{
+    display: none;
 }
 #infos_article{
     width: 35%;
@@ -36,6 +41,50 @@
     text-align: center;
     padding: 5px 0;
 }
+#article_box > #prix_stock_mobile{
+    display: none;
+}
 #ajout_panier{
     margin-top: 40px;
 }
+#ajout_panier > button{
+    background-color:var(--bleu2) ;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    border-radius : 18px;
+    font-size: 20px;
+    transition: 1s;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 25px;
+    transition : 0.5s;
+}
+
+#ajout_panier > button:hover{
+    
+    background-color: var(--bleu2sombre);
+}
+
+#ajout_panier > p{
+    text-align: center;
+}
+
+@media screen and (max-width : 850px){
+    #article_box{
+        flex-direction: column;
+        align-items: center;
+    }
+    #infos_produits_mobile{
+        display: block;
+    }
+    #infos_article{
+        width: 80%;
+        border-left: none;
+        border-top: 5px solid var(--bleu2sombre);
+        
+    }
+    #infos_produits > h2{
+        display: none;
+    }
+
+ }
